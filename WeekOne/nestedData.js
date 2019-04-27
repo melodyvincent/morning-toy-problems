@@ -24,23 +24,32 @@ const composer = {
   // Combine the composer's first and last names, storing on
   // a variable called 'fullName'.
   
-  // CODE HERE
+  const fullName = '${composer, firstName} ${composer.lastName}';
+    console.log (fullName);
   
   // Create a new variable called 'favoriteChild'. Let its
   // value be the child with the longest name (because
   // everyone knows the children with the longest names are
   // their parents' favorites.)
+    
+  let favoriteChild = "";
   
-  // CODE HERE
+  for (let i= 0; i <composer.children.length; 1++) {
+    if(composer.children[i].length > favoriteChild.length) {
+      favoriteChild = composer.children[i]
+    }
+  }
+   
   
   // Create another variable called 'mouthsToFeed' and set its value to be
   // the length of the children array.
   
-  // CODE HERE
+  var  mouthsToFeed = composesr['children'].length;
+        
   
   // Console log the compositions array. What is going to happen?
   
-  // CODE HERE
+  console.log
   
   // Create a variable called 'fruitless'. The value of this variable should
   // be the length of the compositions array.
@@ -147,7 +156,7 @@ const composer = {
   }
   song.push(' batman!');
   song = song.join('');
-  console.clear();
+  // console.clear();
   /* Don't change above this line */
   
   // Invoke Neal Hefti's 'compose' method passing in the 'song' variable as
